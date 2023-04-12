@@ -1,0 +1,67 @@
+.title{
+  font-style: italic;
+  width: 175px;
+  height: 51px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.loginLogo{
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 100px;
+  width: 300px;
+  background-image: url('./instaLogo.png');
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+  
+}
+
+.loginContainer, .joinMemberContainer{
+  margin-top: 50px;
+  padding-bottom: 20px;
+  border: 1px solid black;
+  width: 60%;
+
+}
+
+.box{
+  border : 1px solid #CCCCCC;
+  border-radius: 10px;
+  background-color: #F5F6F7;
+
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  padding-top: 2px;
+  padding-left: 8px;
+  
+  width: 280px;
+  height: 36px;
+
+  margin-top: 10px;
+}
