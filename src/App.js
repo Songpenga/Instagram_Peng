@@ -1,14 +1,22 @@
 import './App.css'; //경로추가하는 방법
 import Box from './box';
+import Button from './components/loginButton';
+import DataTable from "./components/dataTable";
 
+{/*
+  table를 만들어서 행으로 input, button insert
 
+*/}
 function App() {
-
-  let post = '여행 가고 싶다'; //서버에서 가져 올 정보
 
   return (
     <main>
 
+    <div className="App">
+      <DataTable 
+        headers={headers}
+      />
+    </div>
 
     <div className='container'>
       <div className='loginContainer'>
@@ -20,12 +28,24 @@ function App() {
           <Box name = {'비밀번호'}/>
           
           {/* 버튼 */}
-          <Box name = {'로그인'}/>
+          <div className='buttonArea'>
+          <Button label = "로그인" styleClass="loginbutton" 
+          onClick = {() => {alert('로그인!');}} disabled={false} />
+          </div>
+
           <Box name = {' - 또는 - '}/> 
+
           {/* sns로그인 */}
-          <Box name = {'카카오로그인'}/>
-          <Box name = {'네이버로그인'}/>
-          <Box name = {'구글로그인'}/>
+          <div className='buttonArea'>
+            <Button label = "카카오로그인" styleClass="loginbutton" 
+            onClick = {() => {alert('카카오!');}} disabled={false} />
+
+            <Button label = "네이버로그인" styleClass="loginbutton" 
+            onClick = {() => {alert('네이버!');}} disabled={false} />
+
+            <Button label = "구글로그인" styleClass="loginbutton" 
+            onClick = {() => {alert('HEY GOOGLE!');}} disabled={false} />
+          </div>
         </div>
 
 
