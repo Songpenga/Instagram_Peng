@@ -9,13 +9,5 @@ function box(props){
     )
 }
 
-function label(test){
-    return (
-        <div className="label">
-            {test.name}
-        </div>
 
-    )
-}
-
-export default {box, label};
+export default box;
