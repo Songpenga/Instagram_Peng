@@ -1,0 +1,121 @@
+.title {
+  font-style: italic;
+  width: 175px;
+  height: 51px;
+}
+
+.loginLogo {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 100px;
+  width: 300px;
+  background-image: url("./instaLogo.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+}
+
+.loginContainer {
+
+  margin-top: 50px;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  width: auto;
+  border: 1px solid #dbdbdb;
+  font-size: 9pt;
+}
+
+.inputBox {
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  background-color: #fafafa;
+
+  font-style: #737373;
+
+  display: flex;
+
+  margin: auto;
+  align-items: center;
+  padding-top: 2px;
+  padding-left: 8px;
+
+  width: 250px;
+  height: 32px;
+
+  margin: 0px 50px 0px 50px;
+  margin-top: 4px;
+}
+
+.loginbutton {
+  background-color: #0f5514;
+  border-radius: 6px;
+  border: none;
+  color: #ffffff;
+
+  margin-top: 10px;
+  padding-top: 2px;
+  padding-left: 8px;
+  width: 259px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.buttonArea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.line-group {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.line {
+  margin: 25px;
+
+  width: 20%;
+  height: 1px;
+  border: 0px;
+  background-color: #dbdbdb;
+  
+}
+
+.findByKey{
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.joinMemberContainer{
+  border: 1px solid #dbdbdb;
+  width: auto;
+}
+
+.memberContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  width: 350px;
+  height: 50px;
+}
+
+.membership{
+  margin-left: 10px;
+  color: #0f5514;
+  font-weight: bold;
+  cursor: pointer;
+}
