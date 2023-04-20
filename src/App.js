@@ -1,9 +1,10 @@
 import {useState} from "react";
-import "./App.css"; //경로추가하는 방법
-import "./Box";
+import "./App.css"; 
 import Input from "./components/Input";
 import Button from "./components/loginButton";
-
+import KakaoLogIn from "./components/KakaoLogIn";
+import { GoogleLoginSet } from "./components/GoogleLoginSet ";
+import NaverLogin from "./components/NaverLogin";
 function App() {
   const [setId, setIdValue] = useState([]); 
   const [setPw, setPwValue] = useState([]);
@@ -58,14 +59,7 @@ function App() {
                 <div className="line"></div>
               </div>
 
-              <Button
-                label="카카오로그인"
-                styleClass="loginbutton"
-                onClick={() => {
-                  alert("카카오!");
-                }}
-                disabled={false}
-              />
+              <KakaoLogIn/>
 
               <Button
                 label="네이버로그인"
@@ -76,6 +70,7 @@ function App() {
                 }}
                 disabled={false}
               />
+              <NaverLogin />
 
               <Button
                 label="구글로그인"
@@ -85,6 +80,7 @@ function App() {
                 }}
                 disabled={false}
               />
+              <GoogleLoginSet/>
               <p className="findByKey" style={{}}>
                 비밀번호를 잊으셨나요?
               </p>
