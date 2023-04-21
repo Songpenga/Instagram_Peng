@@ -25,14 +25,16 @@
 }
 
 .loginContainer {
+
   margin-top: 50px;
+  margin-bottom: 15px;
   padding-bottom: 20px;
-  border: 1px solid #dbdbdb;
   width: auto;
+  border: 1px solid #dbdbdb;
   font-size: 9pt;
 }
 
-.box {
+.inputBox {
   border: 1px solid #cccccc;
   border-radius: 4px;
   background-color: #fafafa;
@@ -64,6 +66,7 @@
   padding-left: 8px;
   width: 259px;
   height: 36px;
+  cursor: pointer;
 }
 
 .buttonArea {
@@ -88,6 +91,31 @@
   height: 1px;
   border: 0px;
   background-color: #dbdbdb;
+  
 }
 
-.joinMemberContainer{}
+.findByKey{
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.joinMemberContainer{
+  border: 1px solid #dbdbdb;
+  width: auto;
+}
+
+.memberContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  width: 350px;
+  height: 50px;
+}
+
+.membership{
+  margin-left: 10px;
+  color: #0f5514;
+  font-weight: bold;
+  cursor: pointer;
+}
